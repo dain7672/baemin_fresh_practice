@@ -13,12 +13,6 @@ import Alamofire
 
 
 class ViewController: UIViewController {
-    
-    var jsonArray = Array<Dictionary<String,Any>>()
-    var jsonArray2 = Array<Dictionary<String,Any>>()
-    var jsonArray3 = Array<Dictionary<String,Any>>()
-    var jsonArray4 = Array<Dictionary<String,Any>>()
-    
     var jsonArraylist = [Array<Dictionary<String,Any>>(), Array<Dictionary<String,Any>>(), Array<Dictionary<String,Any>>(), Array<Dictionary<String,Any>>()]
     
     @IBOutlet weak var tableView: UITableView!
@@ -39,52 +33,7 @@ class ViewController: UIViewController {
         NM.getjson(url: "http://52.78.212.27:8080/woowa/course", index: 2)
         NM.getjson(url: "http://52.78.212.27:8080/woowa/soup", index: 3)
         
-        
-        
-        
-//        ///////main.json/////////////
-//        let file = Bundle.main.url(forResource: "main", withExtension: "json")
-//        do {
-//            let data = try Data(contentsOf: file!)
-//            let jsonWithArrayRoot = try JSONSerialization.jsonObject(with: data, options: [])
-//            jsonArray = jsonWithArrayRoot as! [[String:Any]]
-//            
-//        }
-//        catch {
-//            print("///////////error////////////")
-//        }
-//        //////side.json///////////////
-//        let file2 = Bundle.main.url(forResource: "side", withExtension: "json")
-//        do {
-//            let data2 = try Data(contentsOf: file2!)
-//            let jsonWithArrayRoot2 = try JSONSerialization.jsonObject(with: data2, options: [])
-//            jsonArray2 = jsonWithArrayRoot2 as! [[String:Any]]
-//            
-//        }
-//        catch {
-//        }
-//        //////soup.json////////////////
-//        let file3 = Bundle.main.url(forResource: "soup", withExtension: "json")
-//        do {
-//            let data3 = try Data(contentsOf: file3!)
-//            let jsonWithArrayRoot3 = try JSONSerialization.jsonObject(with: data3, options: [])
-//            jsonArray3 = jsonWithArrayRoot3 as! [[String:Any]]
-//            
-//        }
-//        catch {
-//        }
-//        //////course.json//////////////
-//        let file4 = Bundle.main.url(forResource: "course", withExtension: "json")
-//        do {
-//            let data4 = try Data(contentsOf: file4!)
-//            let jsonWithArrayRoot4 = try JSONSerialization.jsonObject(with: data4, options: [])
-//            jsonArray4 = jsonWithArrayRoot4 as! [[String:Any]]
-//            
-//        }
-//        catch {
-//        }
-        
-    }
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -128,7 +77,6 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         default:
             return "course"
         }
-        
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -137,40 +85,12 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         
         dic = jsonArraylist[indexPath.section][indexPath.row]
         
-        
-//        URLSession(configuration: URLSessionConfiguration.default).downloadTask(with: URL(string:"http://52.78.212.27:8080/woowa/main")!) {
-//            (data, response, error) in
-//            if let data = data, error == nil {
-//                print("success")
-//                print(data)
-//            }
-//            }.resume()
-
-        
-        
         cell.imageview.image = nil
-        
-//        let utilityQueue = DispatchQueue.global(qos: .utility)
-//        let url = dic["image"] as? String
-//        
-//        Alamofire.download(url!)
-//            .downloadProgress(queue: utilityQueue) { progress in
-//                print("Download Progress: \(progress.fractionCompleted)")
-//            }
-//            .responseData { response in
-//                print("Response is \(response)")
-//                if let data = response.result.value {
-//                    cell.imageview.image = UIImage(data: data)
-//                }
-//        }
-        
         let url = dic["image"] as? String
         Alamofire.request(url!, method: .get).responseImage { response in
             cell.imageview.image = response.result.value
             //print(response.result.value)
         }
-        
-        
         
         cell.title.text = dic["title"] as? String
         cell.title.font = UIFont(name:"HelveticaNeue-Bold", size: 19)
