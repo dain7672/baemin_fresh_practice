@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C855488F8D2E5B452D957CC /* Pods_baemin_fresh_tableview_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCADFD4F7EBF0C02CCC2D7B4 /* Pods_baemin_fresh_tableview_practice.framework */; };
 		981F16EC1F1D98D2004EA3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F16EB1F1D98D2004EA3C1 /* AppDelegate.swift */; };
 		981F16EE1F1D98D2004EA3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F16ED1F1D98D2004EA3C1 /* ViewController.swift */; };
 		981F16F11F1D98D2004EA3C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981F16EF1F1D98D2004EA3C1 /* Main.storyboard */; };
 		981F16F31F1D98D2004EA3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981F16F21F1D98D2004EA3C1 /* Assets.xcassets */; };
 		981F16F61F1D98D2004EA3C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981F16F41F1D98D2004EA3C1 /* LaunchScreen.storyboard */; };
+		981F16FE1F1D98E1004EA3C1 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 981F16FD1F1D98E1004EA3C1 /* main.json */; };
+		981F17001F1D99AA004EA3C1 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F16FF1F1D99AA004EA3C1 /* CustomTableViewCell.swift */; };
+		981F17031F1DD66D004EA3C1 /* side.json in Resources */ = {isa = PBXBuildFile; fileRef = 981F17021F1DD66D004EA3C1 /* side.json */; };
+		981F17051F1DD673004EA3C1 /* soup.json in Resources */ = {isa = PBXBuildFile; fileRef = 981F17041F1DD673004EA3C1 /* soup.json */; };
+		981F17071F1DD67A004EA3C1 /* course.json in Resources */ = {isa = PBXBuildFile; fileRef = 981F17061F1DD67A004EA3C1 /* course.json */; };
+		981F172A1F1EF0D8004EA3C1 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F17291F1EF0D8004EA3C1 /* NetworkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		981F16F21F1D98D2004EA3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		981F16F51F1D98D2004EA3C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981F16F71F1D98D2004EA3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981F16FD1F1D98E1004EA3C1 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		981F16FF1F1D99AA004EA3C1 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		981F17021F1DD66D004EA3C1 /* side.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = side.json; sourceTree = "<group>"; };
+		981F17041F1DD673004EA3C1 /* soup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = soup.json; sourceTree = "<group>"; };
+		981F17061F1DD67A004EA3C1 /* course.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = course.json; sourceTree = "<group>"; };
+		981F17291F1EF0D8004EA3C1 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		BCADFD4F7EBF0C02CCC2D7B4 /* Pods_baemin_fresh_tableview_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_baemin_fresh_tableview_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D01349E35EE36F1D45FCC3 /* Pods-baemin_fresh_tableview_practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baemin_fresh_tableview_practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-baemin_fresh_tableview_practice/Pods-baemin_fresh_tableview_practice.release.xcconfig"; sourceTree = "<group>"; };
+		EF2B53CD8F6351BD4A1A168F /* Pods-baemin_fresh_tableview_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baemin_fresh_tableview_practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-baemin_fresh_tableview_practice/Pods-baemin_fresh_tableview_practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C855488F8D2E5B452D957CC /* Pods_baemin_fresh_tableview_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				981F16EA1F1D98D2004EA3C1 /* baemin_fresh_tableview_practice */,
 				981F16E91F1D98D2004EA3C1 /* Products */,
+				A831665B9421A786AB100C38 /* Pods */,
+				F251B3129276E6CDB85253BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,37 @@
 		981F16EA1F1D98D2004EA3C1 /* baemin_fresh_tableview_practice */ = {
 			isa = PBXGroup;
 			children = (
+				981F17061F1DD67A004EA3C1 /* course.json */,
+				981F17041F1DD673004EA3C1 /* soup.json */,
+				981F17021F1DD66D004EA3C1 /* side.json */,
+				981F16FD1F1D98E1004EA3C1 /* main.json */,
 				981F16EB1F1D98D2004EA3C1 /* AppDelegate.swift */,
 				981F16ED1F1D98D2004EA3C1 /* ViewController.swift */,
+				981F17291F1EF0D8004EA3C1 /* NetworkModel.swift */,
 				981F16EF1F1D98D2004EA3C1 /* Main.storyboard */,
 				981F16F21F1D98D2004EA3C1 /* Assets.xcassets */,
 				981F16F41F1D98D2004EA3C1 /* LaunchScreen.storyboard */,
 				981F16F71F1D98D2004EA3C1 /* Info.plist */,
+				981F16FF1F1D99AA004EA3C1 /* CustomTableViewCell.swift */,
 			);
 			path = baemin_fresh_tableview_practice;
+			sourceTree = "<group>";
+		};
+		A831665B9421A786AB100C38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF2B53CD8F6351BD4A1A168F /* Pods-baemin_fresh_tableview_practice.debug.xcconfig */,
+				D1D01349E35EE36F1D45FCC3 /* Pods-baemin_fresh_tableview_practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F251B3129276E6CDB85253BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCADFD4F7EBF0C02CCC2D7B4 /* Pods_baemin_fresh_tableview_practice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 981F16FA1F1D98D2004EA3C1 /* Build configuration list for PBXNativeTarget "baemin_fresh_tableview_practice" */;
 			buildPhases = (
+				B4940490AB019FE91FA98BA4 /* [CP] Check Pods Manifest.lock */,
 				981F16E41F1D98D2004EA3C1 /* Sources */,
 				981F16E51F1D98D2004EA3C1 /* Frameworks */,
 				981F16E61F1D98D2004EA3C1 /* Resources */,
+				EE12D3962C3955EF52A6DEB2 /* [CP] Embed Pods Frameworks */,
+				C803CDB569F4B766F9D29218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,19 +168,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981F17071F1DD67A004EA3C1 /* course.json in Resources */,
+				981F17031F1DD66D004EA3C1 /* side.json in Resources */,
 				981F16F61F1D98D2004EA3C1 /* LaunchScreen.storyboard in Resources */,
 				981F16F31F1D98D2004EA3C1 /* Assets.xcassets in Resources */,
+				981F16FE1F1D98E1004EA3C1 /* main.json in Resources */,
+				981F17051F1DD673004EA3C1 /* soup.json in Resources */,
 				981F16F11F1D98D2004EA3C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4940490AB019FE91FA98BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C803CDB569F4B766F9D29218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baemin_fresh_tableview_practice/Pods-baemin_fresh_tableview_practice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE12D3962C3955EF52A6DEB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baemin_fresh_tableview_practice/Pods-baemin_fresh_tableview_practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		981F16E41F1D98D2004EA3C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981F172A1F1EF0D8004EA3C1 /* NetworkModel.swift in Sources */,
+				981F17001F1D99AA004EA3C1 /* CustomTableViewCell.swift in Sources */,
 				981F16EE1F1D98D2004EA3C1 /* ViewController.swift in Sources */,
 				981F16EC1F1D98D2004EA3C1 /* AppDelegate.swift in Sources */,
 			);
@@ -260,6 +359,7 @@
 		};
 		981F16FB1F1D98D2004EA3C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2B53CD8F6351BD4A1A168F /* Pods-baemin_fresh_tableview_practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = baemin_fresh_tableview_practice/Info.plist;
@@ -272,6 +372,7 @@
 		};
 		981F16FC1F1D98D2004EA3C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D01349E35EE36F1D45FCC3 /* Pods-baemin_fresh_tableview_practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = baemin_fresh_tableview_practice/Info.plist;
@@ -301,6 +402,7 @@
 				981F16FC1F1D98D2004EA3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
